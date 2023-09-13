@@ -28,7 +28,7 @@ class _CalculatorState extends State<Calculator> {
     } else if (value == '=') {
       if (input.isNotEmpty) {
         var userinput = input;
-        userinput = input.replaceAll("÷", "/");
+
         userinput = input.replaceAll('x2', '^2');
         // userinput = input.replaceAll("x", "*");
         Parser p = Parser();
@@ -83,7 +83,7 @@ class _CalculatorState extends State<Calculator> {
                   tcolor: Colors.white, bcolor: Colors.amber.shade500),
               Reusablerow('x2', issuperscript: true),
               Reusablerow('', isicon: true),
-              Reusablerow('÷'),
+              Reusablerow('/'),
             ],
           ),
           Row(
